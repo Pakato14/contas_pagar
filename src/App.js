@@ -3,17 +3,17 @@ import Home from "./components/pages/Home";
 import Company from "./components/pages/Company";
 import Contact from "./components/pages/Contact";
 import NovaConta from "./components/pages/NovaConta";
+import Contas from "./components/pages/Contas";
 
 import Container from "./components/layout/Container";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
     <Router>
       <div>
-        <Link to="/">Home</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/company">Company</Link>
-        <Link to="/novaconta">Nova Conta</Link>
+        <Navbar />
       </div>
       <Container customClass="min-height">
         <Routes>
@@ -21,9 +21,10 @@ function App() {
           <Route exact path="/company" element={<Company />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/novaconta" element={<NovaConta />}></Route>
+          <Route exact path="/contas" element={<Contas />}></Route>
         </Routes>
       </Container>
-      <p>Footer</p>
+      <Footer />
     </Router>
   );
 }
