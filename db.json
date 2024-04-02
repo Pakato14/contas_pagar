@@ -1,0 +1,25 @@
+{
+  "contas": [
+    {
+      "name": "Conta de água",
+      "valor": "25",
+      "data_venc": "2024-04-01",
+      "juros": "2",
+      "id": 1
+    },
+    {
+      "name": "Parcela do Curso DevOps",
+      "valor": "560",
+      "data_venc": "2024-04-12",
+      "juros": "2.5",
+      "id": 2
+    },
+    {
+      "name": "Conta da Enel",
+      "valor": "150",
+      "data_venc": "2024-04-15",
+      "juros": "1.5",
+      "id": 3
+    }
+  ]
+}
