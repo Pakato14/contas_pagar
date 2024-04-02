@@ -20,6 +20,27 @@
       "data_venc": "2024-04-15",
       "juros": "1.5",
       "id": 3
+    },
+    {
+      "name": "Consorcio",
+      "valor": "1600",
+      "data_venc": "2024-04-15",
+      "juros": "1.5",
+      "id": 4
+    },
+    {
+      "name": "Cartão",
+      "valor": "500",
+      "data_venc": "2024-03-22",
+      "juros": "3.5",
+      "id": 5
+    },
+    {
+      "name": "Boleto",
+      "valor": "251",
+      "data_venc": "2024-04-12",
+      "juros": "1",
+      "id": 6
     }
   ]
 }

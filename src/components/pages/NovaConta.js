@@ -22,7 +22,7 @@ function NovaConta(){
             console.log(data)
             //redirect
             //history.push('/contas', { message: 'Conta cadstrada com sucesso'})
-            navigate("/contas", { message: "PConta cadstrada com sucesso!" })
+            navigate("/contas", { message: "Conta cadastrada com sucesso!" })
         })
         .catch(err => console.log(err))
 
