@@ -6,7 +6,7 @@ function NovaConta(){
         <div className={styles.new_account_container}>
             <h1>Cadastrar Conta</h1>
             <p>Cadastre a conta para organizar a sua saúde financeira</p>
-            <AccountForm />
+            <AccountForm btnText="Cadastrar Conta"/>
         </div>
     )
 }
