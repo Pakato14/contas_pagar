@@ -8,13 +8,6 @@
       "id": 1
     },
     {
-      "name": "Parcela do Curso DevOps",
-      "valor": "560",
-      "data_venc": "2024-04-12",
-      "juros": "2.5",
-      "id": 2
-    },
-    {
       "name": "Conta da Enel",
       "valor": "150",
       "data_venc": "2024-04-15",
@@ -36,25 +29,11 @@
       "id": 5
     },
     {
-      "name": "Boleto",
-      "valor": "251",
-      "data_venc": "2024-04-12",
-      "juros": "1",
-      "id": 6
-    },
-    {
       "name": "IPVA",
       "valor": "600",
       "data_venc": "2024-04-08",
       "juros": "0.25",
       "id": 7
-    },
-    {
-      "name": "Boticário",
-      "valor": "25",
-      "data_venc": "2024-04-10",
-      "juros": "0.2",
-      "id": 8
     }
   ]
 }
