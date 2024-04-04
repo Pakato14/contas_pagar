@@ -12,6 +12,8 @@ import AccountCard from "../account/AccountCard"
 function Contas() {
     const [contas, setContas] = useState([])
     const [removeLoading, setRemoveLoading]  = useState(false)
+    const [contaMensagem, setContaMessagem] = useState('')
+
   const location = useLocation();
   let message = "";
   if (location.state) {
@@ -35,6 +37,17 @@ function Contas() {
   }, [])
 
   function removeConta(id){
+    fetch(`http://localhost:5000/contas/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-type': 'application/json'
+      },
+    }).then(resp => resp.json())
+    .then(data => {
+      setContas(contas.filter((conta) => conta.id !== id))
+      setContaMessagem('Conta removida com sucesso!')
+    })
+    .catch(err => console.log(err))
     
   }
   return (
@@ -44,6 +57,7 @@ function Contas() {
         <LinkButton to="/novaconta" text="Cadastrar Conta" />
       </div>
       {message && <Message type="success" msg={message} />}
+      {contaMensagem && <Message type="success" msg={contaMensagem} />}
       <Container customClass="start">
         {contas.length > 0 && contas.map((conta) =>(
           <AccountCard 
@@ -53,6 +67,7 @@ function Contas() {
             data_venc={conta.data_venc}
             juros={conta.juros} 
             key={conta.id}
+            handleRemove={removeConta}
             />
         ))}
         {!removeLoading && <Loading />}   
