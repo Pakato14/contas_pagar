@@ -38,7 +38,17 @@ function Contas() {
       </div>
       {message && <Message type="success" msg={message} />}
       <Container customClass="start">
-        <p>Contas...</p>
+        {contas.length > 0 && contas.map((conta) =>(
+          <AccountCard 
+            id={conta.id}
+            name={conta.name}
+            valor={conta.valor}
+            data_venc={conta.data_venc}
+            juros={conta.juros} 
+            key={conta.id}
+            />
+        ))}
+        
       </Container>
     </div>
   );

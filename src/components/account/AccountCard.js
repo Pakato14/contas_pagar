@@ -10,15 +10,18 @@ function AccountCard({id, name, valor, data_venc, juros, handleRemove}){
       }
 
       return (
-        <div className={styles.project_card}>
+        <div className={styles.account_card}>
           <h4>{name}</h4>
           <p>
-            <span>Valor:</span> R${valor}
+            <span>Valor:</span> R$ {valor}
+          </p>
+          <p>
+            <span>Juros:</span> R$ {juros}
           </p>
           <p className={styles.category_text}>
-            <span className={`${styles[data_venc.toLowerCase()]}`}></span> {data_venc}
+            <span className={`${styles[data_venc?.toLowerCase() ||'']}`}></span> {data_venc}
           </p>
-          <div className={styles.project_card_actions}>
+          <div className={styles.account_card_actions}>
             <Link to={'/project/' + id}>
               <BsPencil /> Editar
             </Link>
