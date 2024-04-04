@@ -22,7 +22,7 @@ function AccountCard({id, name, valor, data_venc, juros, handleRemove}){
             <span className={`${styles[data_venc?.toLowerCase() ||'']}`}></span> {data_venc}
           </p>
           <div className={styles.account_card_actions}>
-            <Link to={'/project/' + id}>
+            <Link to={`/conta/ ${id}`}>
               <BsPencil /> Editar
             </Link>
             <button onClick={remove}>
