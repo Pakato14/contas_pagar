@@ -1,0 +1,17 @@
+.contact-container {
+    display: flex;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; /* Espaçamento entre os contatos */
+}
+
+.contact-item img {
+    border-radius: 50%; /* Para tornar a imagem circular */
+}
+
+.contact-info {
+    margin-top: 10px; /* Espaçamento entre a imagem e as informações do contato */
+}
